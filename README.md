@@ -9,7 +9,7 @@ A Windows installer for [Glasscord](https://github.com/AryToNeX/Glasscord/)
 - There is **no** functionality for creating an "app" folder
 
 ## Use
-The exe can be downloaded and run as-is. Optionally, if you'd prefer to compile it yourself, the Python module [Pyinstaller](https://www.pyinstaller.org/) was used with the command `pyinstaller -F -i [icon file path] "Glasscord Installer.py"`. An icon file can be found [here](x) and a general tutorial can be found [here](https://www.youtube.com/watch?v=lOIJIk_maO4).
+The exe can be downloaded and run as-is. Optionally, if you'd prefer to compile it yourself, the Python module [Pyinstaller](https://www.pyinstaller.org/) was used with the command `pyinstaller -F -i [icon file path] "Glasscord Installer.py"`. An icon file can be found [here](https://github.com/Randymations/Glasscord-Installer/blob/main/icon/Glasscord.ico) and a general tutorial can be found [here](https://www.youtube.com/watch?v=lOIJIk_maO4).
 
 ## Notes
 - After v1.0 of Glasscord officially releases, there will be an update to the installer.
