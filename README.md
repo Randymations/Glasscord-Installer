@@ -5,7 +5,7 @@ A Windows installer for [Glasscord](https://github.com/AryToNeX/Glasscord/)
 
 ## Functions
 - At the moment, this installer is **exclusively** for Windows
-- Functionality of this installer follows <ins>Case 2</ins> of [the official guide](https://github.com/AryToNeX/Glasscord/wiki/Installation/)
+- Functionality of this installer follows [Case 2](https://github.com/AryToNeX/Glasscord/wiki/Installation#case-2-you-already-have-an-app-folder) of [the official guide](https://github.com/AryToNeX/Glasscord/wiki/Installation/)
 - There is **no** functionality for creating an "app" folder
 
 ## Use
@@ -16,18 +16,18 @@ The exe can be downloaded and run as-is. Optionally, if you'd prefer to compile 
 
 ## License
 Just as Glasscord is, this installer is licensed under the Apache 2.0 License
+```
+Copyright 2020 Randymations
 
-```Copyright 2020 Randymations
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-   
-       http://www.apache.org/licenses/LICENSE-2.0
-       
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 ```
