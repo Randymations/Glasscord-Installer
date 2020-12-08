@@ -13,9 +13,10 @@ The exe can be downloaded and run as-is. Optionally, if you'd prefer to compile 
 
 ## Notes
 - After v1.0 of Glasscord officially releases, there will be an update to the installer.
+- This was never meant to be a complicated project. It was created to work in conjunction with [BetterDiscord](https://betterdiscord.net/) as a tool to help friends install Glasscord who were too lazy to read the manual installation instructions.
 
 ## License
-Just as Glasscord is, this installer is licensed under the Apache 2.0 License
+Just as Glasscord is, this installer is licensed under the Apache 2.0 License.
 ```
 Copyright 2020 Randymations
 
