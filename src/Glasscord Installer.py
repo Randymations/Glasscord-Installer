@@ -13,8 +13,10 @@ def main():
     global versions
     global mainpath
     global update
+    temp = ''
+    appfiles = []
     print('Install/Update Glasscord - Glasscord by AryToNeX - Installer by Randymations\n')
-    mainpath = input('If Discord is installed in its default location, press ENTER now. Otherwise, submit the installation path. (Normally under Local AppData) > \n')
+    mainpath = input('If Discord is installed in its default location, press ENTER now.\nOtherwise, submit the installation path. (Normally under Local AppData) > \n')
     print()
     if mainpath == '':
         mainpath = os.path.expandvars('%LOCALAPPDATA%/Discord/')
@@ -23,12 +25,17 @@ def main():
     dircheck('Error: Invalid path')
     for i in range(len(files)):
         if files[i][:4] == 'app-':
-            versions.append(int(files[i][-3:]))
+            for j in range(len(files[i])):
+                    if files[i][j].isnumeric():
+                        temp = temp + files[i][j]
+            versions.append(int(temp))
+            appfiles.append(files[i])
     if len(versions) == 0:
         end('Error: No builds detected')
-    for i in range(len(files)):
-        if files[i][-3:] == str(max(versions)):
-            mainpath = mainpath + files[i] + '/resources/'
+    for i in range(len(appfiles)):
+        if versions[i] == max(versions):
+            timeprint(f'Found build "{appfiles[i]}"')
+            mainpath = mainpath + appfiles[i] + '/resources/'
     dircheck('Error: "resources" folder missing')
     mainpath = mainpath + 'app/'
     dircheck('Error: "app" folder missing')
