@@ -1,7 +1,7 @@
 # Glasscord-Installer
 A Windows installer for [Glasscord](https://github.com/AryToNeX/Glasscord/)
 
-Note: Glasscord has been discontinued. At the moment of writing, Glasscord is still functional (Discord stable 82590), but if installation/execution is unsuccessful, visit [the official guide](https://github.com/AryToNeX/Glasscord/wiki/Installation/) and try manually installing.
+Note: Glasscord has been discontinued. At the moment of writing, Glasscord is still functional (Discord stable 122087), but if installation/execution is unsuccessful, visit [the official guide](https://github.com/AryToNeX/Glasscord/wiki/Installation/) and try manually installing.
 
 [AryToNeX](https://github.com/AryToNeX/) is the creator of Glasscord and no changes were made to their work.
 
