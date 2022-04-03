@@ -9,6 +9,7 @@ Note: Glasscord has been discontinued. At the moment of writing, Glasscord is st
 - At the moment, this installer is **exclusively** for Windows
 - Functionality of this installer follows [Case 2, Method A](https://github.com/AryToNeX/Glasscord/wiki/Installation#case-2-you-already-have-an-app-folder) of [the official guide](https://github.com/AryToNeX/Glasscord/wiki/Installation/)
 - There is **no** functionality for creating an "app" folder
+- Option to uninstall
 
 ## Use
 The exe can be downloaded and run as-is. Optionally, if you'd prefer to compile it yourself, the Python module [Pyinstaller](https://www.pyinstaller.org/) was used with the command `pyinstaller -F -i "icon/file/path" "Glasscord Installer.py"`. An icon file can be found [here](https://github.com/Randymations/Glasscord-Installer/blob/main/icon/Glasscord.ico) and a general tutorial can be found [here](https://www.youtube.com/watch?v=lOIJIk_maO4).
@@ -16,7 +17,7 @@ The exe can be downloaded and run as-is. Optionally, if you'd prefer to compile 
 ## Notes
 - ~~After v1.0 of Glasscord officially releases, there will be an update to the installer.~~
 - If Glasscord is *ever* updated, the installer will be updated as well.
-- This was never meant to be a complicated project. It was created to work in conjunction with [BetterDiscord](https://betterdiscord.net/) as a tool to help friends install Glasscord who were too lazy to read the manual installation instructions.
+- This was never meant to be a complicated project. It was created to work in conjunction with [Better Discord](https://betterdiscord.net/) as a tool to help friends install Glasscord who were too lazy to read the manual installation instructions.
 
 ## License
 Just as Glasscord is, this installer is licensed under the Apache 2.0 License.
