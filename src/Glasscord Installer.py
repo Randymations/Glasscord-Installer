@@ -1,23 +1,21 @@
 import os
 import json
-import urllib.request
+import shutil
 from datetime import datetime
 
 files = []
 versions = []
 mainpath = ''
-update = False
 
 def main():
     global files
     global versions
     global mainpath
-    global update
     temp = ''
     appfiles = []
-    print('Install/Update Glasscord - Glasscord by AryToNeX - Installer by Randymations\n')
+    print('Install Glasscord - Glasscord by AryToNeX - Installer by Randymations\n')
     install = True
-    if input('Press ENTER to install/update. Otherwise, submit "X" (without quotes) to uninstall. > ').lower() == 'x':
+    if input('Press ENTER to install. Otherwise, submit "X" (without quotes) to uninstall. > ').lower() == 'x':
         install = False
         print('Ensure Discord is fully closed before continuing')
     mainpath = input('If Discord is installed in its default location, press ENTER now.\nOtherwise, submit the installation path. (Normally under Local AppData) >\n')
@@ -99,20 +97,16 @@ def main():
             timeprint('Previous Glasscord installation detected')
             if not os.path.isfile(mainpath+'package.original.json'):
                 end('Error: "package.original.json" file missing - Reinstall Discord')
-            update = True
+            end('No modification needed')
     except:
-        end('"package.json" invalid format - Reinstall Discord')
+        end('Error: "package.json" invalid format - Reinstall Discord')
     timeprint('File checks passed')
     try:
-        if update:
-            timeprint('Updating Glasscord')
-        timeprint('Begun download of "glasscord.asar"...')
-        glasscord, headers = urllib.request.urlretrieve('https://github.com/AryToNeX/Glasscord/releases/download/v0.9999.9999/glasscord.asar', filename=mainpath + 'glasscord.asar')
-        timeprint('Download complete')
+        timeprint('Copying "glasscord.asar"...')
+        shutil.copy('./glasscord.asar',mainpath+'glasscord.asar')
+        timeprint('Copy complete')
     except:
-        end('Error: Download failed')
-    if update:
-        end('Update successful')
+        end('Error: Copy failed')
     try:
         infile = open(mainpath+'package.original.json', 'w')
         json.dump(file, infile)
@@ -128,15 +122,15 @@ def main():
     except:
         end('Error: Unable to access "package.json"')
     timeprint('"package.json" altered')
-    print('Installation successful')
-    end('Visit https://github.com/AryToNeX/Glasscord/ for more information.')
+    end('Installation successful')
 
 def end(message):
     if message[:6] == 'Error:':
         timeprint(message)
-        print('\nVisit https://github.com/AryToNeX/Glasscord/ for manual installation instructions.')
+        print('\nCheck https://github.com/Randymations/Glasscord-Installer to ensure Glasscord is still functional.')
     else:
-        print(f'\n{message} (You may now close this window)')
+        print(message)
+        print('\nIf Glasscord still doesn\'t seem to be working, ensure Glasscord is still functional.\nhttps://github.com/Randymations/Glasscord-Installer\n(You may now close this window)')
     input()
     quit()
 
