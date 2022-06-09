@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import shutil
 from datetime import datetime
@@ -6,6 +7,7 @@ from datetime import datetime
 files = []
 versions = []
 mainpath = ''
+endstore = ''
 
 def main():
     global files
@@ -13,7 +15,7 @@ def main():
     global mainpath
     temp = ''
     appfiles = []
-    print('Install Glasscord - Glasscord by AryToNeX - Installer by Randymations\n')
+    print('Install Glasscord - Glasscord by NyaomiDEV - Installer by Randymations\n')
     install = True
     if input('Press ENTER to install. Otherwise, submit "X" (without quotes) to uninstall. > ').lower() == 'x':
         install = False
@@ -57,7 +59,7 @@ def main():
                 end('Error: Unable to access "package.json"')
             try:
                 if file['main'] == './glasscord.asar':
-                    end('Error: "package.original.json" required - Reinstall Discord')
+                    tryend('Error: "package.original.json" required - Reinstall Discord')
                 installed = False
                 timeprint('Glasscord likely not installed - Continuing with deletions')
             except:
@@ -96,8 +98,8 @@ def main():
         if file['main'] == './glasscord.asar':
             timeprint('Previous Glasscord installation detected')
             if not os.path.isfile(mainpath+'package.original.json'):
-                end('Error: "package.original.json" file missing - Reinstall Discord')
-            end('No modification needed')
+                tryend('Error: "package.original.json" file missing - Reinstall Discord')
+            tryend('No modification needed')
     except:
         end('Error: "package.json" invalid format - Reinstall Discord')
     timeprint('File checks passed')
@@ -125,6 +127,9 @@ def main():
     end('Installation successful')
 
 def end(message):
+    global endstore
+    if not not endstore:
+        message = endstore
     if message[:6] == 'Error:':
         timeprint(message)
         print('\nCheck https://github.com/Randymations/Glasscord-Installer to ensure Glasscord is still functional.')
@@ -132,7 +137,12 @@ def end(message):
         print(message)
         print('\nIf Glasscord still doesn\'t seem to be working, ensure Glasscord is still functional.\nhttps://github.com/Randymations/Glasscord-Installer\n(You may now close this window)')
     input()
-    quit()
+    sys.exit()
+
+def tryend(message):
+    global endstore
+    endstore = message
+    raise Exception()
 
 def dircheck(message):
     global files
