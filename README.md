@@ -3,6 +3,9 @@ A Windows installer for ~~[Glasscord](https://github.com/AryToNeX/Glasscord/)~~
 
 Note: Glasscord has been discontinued and all official resources have been deleted. At the moment of writing, Glasscord is still functional (Discord stable 131246), but if installation/execution is unsuccessful, Glasscord may have finally died. If this is the case, [Glasstron](https://github.com/NyaomiDEV/Glasstron) is the closest alternative.
 
+## DISCLAIMER:
+Glasscord is outdated and contains vulnerabilities that can get your account hacked. As stated in the license, nobody is responsible for your decisions and you use Glasscord (and my installer) at your own risk.
+
 [NyaomiDEV](https://github.com/NyaomiDEV/) is the creator of Glasscord and no changes were made to their work.
 
 ## Functions
