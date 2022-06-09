@@ -1,12 +1,12 @@
 # Glasscord Installer
 A Windows installer for ~~[Glasscord](https://github.com/AryToNeX/Glasscord/)~~
 
-Note: Glasscord has been discontinued and all official resources have been deleted. At the moment of writing, Glasscord is still functional (Discord stable 131246), but if installation/execution is unsuccessful, Glasscord may have finally died. If this is the case, [Glasstron](https://github.com/NyaomiDEV/Glasstron) is the closest alternative.
-
-## DISCLAIMER:
-Glasscord is outdated and contains vulnerabilities that can get your account hacked. As stated in the license, nobody is responsible for your decisions and you use Glasscord (and my installer) at your own risk.
+Note: Glasscord has been discontinued and all official resources have been deleted. At the moment of writing, Glasscord is still functional (Discord stable 131246), but if execution is unsuccessful, Glasscord may have finally died. If this is the case, [Glasstron](https://github.com/NyaomiDEV/Glasstron) is the closest alternative.
 
 [NyaomiDEV](https://github.com/NyaomiDEV/) is the creator of Glasscord and no changes were made to their work.
+
+## DISCLAIMER:
+Glasscord is outdated and contains vulnerabilities that can get your account hacked. As stated in the license, nobody is responsible for your decisions and your use of Glasscord (and my installer) is at your own risk.
 
 ## Functions
 - At the moment, this installer is **exclusively** for Windows
