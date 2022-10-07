@@ -1,12 +1,15 @@
 # Glasscord Installer
 A Windows installer for ~~[Glasscord](https://github.com/AryToNeX/Glasscord/)~~
 
-Note: Glasscord has been discontinued and all official resources have been deleted. At the moment of writing, Glasscord is still functional (Discord stable 131246), but if execution is unsuccessful, Glasscord may have finally died. If this is the case, [Glasstron](https://github.com/NyaomiDEV/Glasstron) is the closest alternative.
+Note: Glasscord has been discontinued and all official resources have been deleted. At the moment of writing, Glasscord is still functional (Discord stable 131246), but if execution is unsuccessful, Glasscord may have finally died. If this is the case, [Acrylic](https://github.com/uwu/Acrylic) is the closest alternative.
+
+## ANNOUNCEMENT:
+**This project is now deprecated.** This project continuted to exist because Glasscord was the only software for easily creating Discord compositing effects. It was incomplete and insecure. Now that an [alternative](https://github.com/uwu/Acrylic) exists, Glasscord is no longer necessary, and this project no longer needs to exist. This project will remain archived and the binary has been removed from the latest release.
 
 [NyaomiDEV](https://github.com/NyaomiDEV/) is the creator of Glasscord and no changes were made to their work.
 
 ## DISCLAIMER:
-Glasscord is outdated and contains vulnerabilities that can get your account hacked. As stated in the license, nobody is responsible for your decisions and your use of Glasscord (and my installer) is at your own risk.
+Glasscord is outdated and allegedly contains vulnerabilities that can get your account hacked. As stated in the license, nobody is responsible for your decisions and your use of Glasscord (and my installer) is at your own risk.
 
 ## Functions
 - At the moment, this installer is **exclusively** for Windows
@@ -20,7 +23,7 @@ The exe can be downloaded and run as-is. Optionally, if you'd prefer to compile 
 ## Notes
 - ~~After v1.0 of Glasscord officially releases, there will be an update to the installer.~~
 - ~~If Glasscord is *ever* updated, the installer will be updated as well.~~
-- The offical Glasscord Github page was deleted and all Electron compositing efforts are now being put towards [Glasstron](https://github.com/NyaomiDEV/Glasstron). 
+- The offical Glasscord Github page was deleted and all Electron compositing efforts by [NyaomiDEV](https://github.com/NyaomiDEV/) are now being put towards [Glasstron](https://github.com/NyaomiDEV/Glasstron). 
 - This was never meant to be a complicated project. It was created to work in conjunction with [Better Discord](https://betterdiscord.net/) as a tool to help friends install Glasscord who were too lazy to read the manual installation instructions.
 
 ## License
